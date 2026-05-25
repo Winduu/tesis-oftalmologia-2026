@@ -6,7 +6,9 @@
 # =====================================================
 # 1. PAQUETES
 # =====================================================
-
+# Dentro de tu proyecto en RStudio:
+usethis::use_git()        # Inicializa Git local
+usethis::use_github()     # Crea el repositorio en GitHub y sube todo
 library(MASS)
 library(tidyverse)
 library(janitor)
@@ -34,7 +36,7 @@ dir.create("resultados", showWarnings = FALSE)
 # 3. CARGA Y LIMPIEZA INICIAL
 # =====================================================
 
-df <- read_csv("base_sensibilidad_corneal_113_pacientes_v2_conservadora.csv") %>%
+df <- read_csv("base_sensibilidad_corneal.csv") %>%
   clean_names() %>%
   mutate(across(where(is.character), str_trim)) %>%
   mutate(across(
