@@ -9,3 +9,10 @@ base_sensibilidad_corneal.csv
 *.csv
 *.csv
 *.RData
+base_sensibilidad_corneal.csv
+tesis_sensibilidad_corneal_113.RData
+*.RData
+.RData
+.Rhistory
+.Rapp.history
+.DS_Store
